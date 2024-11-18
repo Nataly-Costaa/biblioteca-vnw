@@ -1,0 +1,26 @@
+#pageInicio {
+    article {
+        height: 85vh;
+        background-image: url("../../assets/img/banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        #boxText1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+
+            #text1 {
+                width: 70%;
+                line-height: 2.3rem;
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: var(--color1);
+            }
+        }
+
+    }
+}
