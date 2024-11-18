@@ -7,12 +7,12 @@ import search from "../../assets/img/search.png";
 export default function header() {
     return (
         <header>
-            <figure id={S.logo}>
+            <div id={S.logo}>
                 <Link to="/" id={S.boxLogo}>
                     <img src={logo} alt="Logo livro aberto" />
                     <h1 className={S.titulo}>Livros Vai na Web </h1>
                 </Link>
-            </figure>
+            </div>
 
             <nav id={S.navigation}>
                 <ul>
