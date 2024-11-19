@@ -149,3 +149,61 @@ ul .links:hover::after {
         }
     }    
 } 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        height: 40vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        #logo {
+            width: 47vw;
+
+            #boxLogo {
+                width: 47vw;
+
+                img {
+                    width: 8vw;
+                    height: 7vh;
+                }
+            }   
+        }
+
+        #navigation {
+            width: 80vw;
+        }
+
+        .searchContainer {
+            width: 42vw;
+
+            #box {
+                width: 40vw;
+            }
+        }
+    }
+}
+
+@media(min-width: 1114px) and (max-width:1114px) {
+    header {
+        #logo {
+            width: 37vw;
+
+            #boxLogo {
+                width: 47vw;
+
+                img {
+                    width: 6vw;
+                }
+            }   
+        }
+
+        .searchContainer {
+            width: 25vw;
+
+            #box {
+                width: 23vw;
+            }
+        }
+    }
+
+}

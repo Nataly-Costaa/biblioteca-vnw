@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40%;
+            width: 38vw;
             height: 100%;
 
             #text1 {
@@ -61,10 +61,132 @@
             height: 55vh;
             border-radius: 10px;
 
+            img {
+                width: 8.5vw;
+                height: 20vh;
+            }
+
             p {
                 width: 17vw;
                 text-align: center;
                 font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    #pageInicio {
+        #banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #boxText1 {
+                width: 100%;
+    
+                #text1 {
+                    width: 90%;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #container1 {
+        height: 270vh;
+
+        #text2 {
+            width: 100vw;
+            height: 45vh;
+
+            h2 {
+                font-size: 1.9rem;
+            }
+        }
+
+        #boxCards {
+            display: flex;
+            flex-direction: column;
+            height: 500vh;
+
+            .cards {
+                width: 80vw;
+                height: 45vh;
+
+                img {
+                    width: 35vw;
+                    height: 17.5vh;
+                }
+
+                p {
+                    width: 60vw;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #container1 {
+        height: 145vh;
+
+        #text2 {
+            width: 53vw;
+        }
+
+        #boxCards {
+            height: 130vh;
+
+            .cards {
+                width: 35vh;
+                height: 45vh;
+
+                img {
+                    width: 19.1vw;
+                    height: 15vh;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35vw;
+                    height: 15vh;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 800px) and (max-width:800px) {
+        #container1 #boxCards {
+            height: 90vh;
+
+            .cards {
+                width: 45vw;
+                height: 37vh;
+            }
+        }
+    }
+}
+
+@media(min-width: 1114px) and (max-width:1114px) {
+    #container1 #boxCards {
+        height: 115vh;
+
+        .cards {
+            width: 26vw;
+            height: 52vh;
+
+            img {
+                height: 15.1vh;
+            }
+
+            p {
+                width: 20vw;
             }
         }
     }
