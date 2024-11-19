@@ -1,0 +1,77 @@
+main {
+    height: 123vh;
+
+    #container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 120vh;
+
+        p {
+            font-size: 1.2rem;
+        }
+    
+        #infoBook {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 90vh;
+            border: solid var(--color2);
+            border-radius: 19px;
+    
+            #titleForm {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 75vh;
+    
+                p {
+                    font-size: 1.5rem;
+                    color: var(--color2);
+                }
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 75vh;
+                height: 60vh;
+    
+                input {
+                    width: 60vh;
+                    height: 7vh;
+                    border-radius: 15px;
+                    border: solid var(--color2);
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+    
+                button {
+                    width: 12vw;
+                    height: 8vh;
+                    background-color: var(--color2);
+                    color: var(--color1);
+                    font-size: 1rem;
+                    border-radius: 10px;
+                    border: none;
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+                }
+    
+                button:hover {
+                    background-color: var(--color5);
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+#titleForm img {
+    width: 4.5vw;
+    height: 9vh;
+}

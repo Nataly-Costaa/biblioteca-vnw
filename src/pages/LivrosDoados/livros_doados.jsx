@@ -1,7 +1,5 @@
-export default function livros_doados() {
+export default function quero_doar() {
     return (
-        <main>
-            <h1>Livros doados</h1>
-        </main>
+        <h1>Quero Doar</h1>
     );
 };
