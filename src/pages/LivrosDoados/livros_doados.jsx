@@ -1,7 +1,21 @@
 import S from "./livros_doados.module.scss";
 import book1 from "../../assets/img/book_harry_potter.png";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-export default function livros_doados() {
+export default function LivrosDoados() {
+
+    const [livros, setLivros] = useState([]);
+
+    const getLivros = async () => {
+        const response = await axios.get("https://api-livros-vnw-75sm.onrender.com/livros");
+        setLivros(response.data);
+    }
+
+    useEffect(() => {
+        getLivros()
+    },[]);
+
     return (
         <main id={S.pageLivrosDoados}>
             <h2>Livros doados</h2>
@@ -16,6 +30,18 @@ export default function livros_doados() {
                         <p>Fantasia</p>
                     </div>
                 </div>
+
+                {livros.map((livro, index) => (
+                    <div key={index} className={S.cardBooks}>
+                        <img src={livro.imagem_url} alt={livro.titulo} />
+                        <div id={S.bookInfo}>
+                            <p id={S.nameBook}>{livro.titulo}</p>
+                            <p>{livro.autor}</p>
+                            <p>{livro.categoria}</p>
+                        </div>
+                    </div>
+                ))}
+
             </section>
         </main>
     );

@@ -1,4 +1,6 @@
 #pageLivrosDoados {
+    height: 170vh;
+
     h2 {
         display: flex;
         justify-content: center;
@@ -9,9 +11,10 @@
 
     #container3 {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
-        height: 70vh;
+        height: 140vh;
 
         .cardBooks {
             display: flex;
