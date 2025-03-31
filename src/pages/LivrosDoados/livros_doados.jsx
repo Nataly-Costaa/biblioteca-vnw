@@ -1,7 +1,7 @@
 import S from "./livros_doados.module.scss";
 import book1 from "../../assets/img/book_harry_potter.png";
 
-export default function quero_doar() {
+export default function livros_doados() {
     return (
         <main id={S.pageLivrosDoados}>
             <h2>Livros doados</h2>
